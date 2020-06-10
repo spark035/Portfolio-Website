@@ -1,0 +1,20 @@
+// Variables
+$window-width: 1280px;
+$main-color: #4169e1;
+$light-color: #5dade2;
+$dark-color: rgb(17, 9, 134);
+$grey-color: rgb(117, 127, 163);
+$alt-color1: #ffc300;
+$alt-color2: #ff5733;
+$alt-color3: #c70039;
+$bg-image: url('../img/Showcase1.jpg');
+$bg-image2: url('../img/ShowcaseInner.jpg');
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 80) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
